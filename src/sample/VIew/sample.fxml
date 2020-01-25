@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="717.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="717.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
     <AnchorPane layoutY="123.0" prefHeight="321.0" prefWidth="717.0" style="-fx-background-color: fafafa; -fx-border-color: silver;">
         <TextField fx:id="loginLogin" layoutX="190.0" layoutY="94.0" prefHeight="38.0" prefWidth="337.0" promptText="Логин" style="-fx-background-color: fafafa; -fx-border-color: Silver; -fx-border-radius: 5px;">
             <font>
