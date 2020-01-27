@@ -5,6 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.hibernate.Session;
+import sample.Utils.HibernateUtils;
+import sample.domains.User;
 
 public class Main extends Application {
 
@@ -14,6 +17,14 @@ public class Main extends Application {
         primaryStage.setTitle("Test");
         primaryStage.setScene(new Scene(root, 717, 443));
         primaryStage.show();
+        try(Session session = HibernateUtils.getSession()) {
+            session.beginTransaction();
+            User user = new User();
+            session.save(user);
+            session.getTransaction().commit();
+        } catch (Throwable cause) {
+            cause.printStackTrace();
+        }
     }
 
 
