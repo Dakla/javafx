@@ -5,7 +5,17 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="717.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SingUpController">
-    <AnchorPane fx:id="singUpName" layoutY="123.0" prefHeight="321.0" prefWidth="717.0" style="-fx-background-color: fafafa; -fx-border-color: silver;">
+    <Label layoutX="275.0" layoutY="14.0" text="Hello" textFill="WHITE">
+        <font>
+            <Font name="JetBrains Mono Regular" size="56.0" />
+        </font>
+    </Label>
+    <AnchorPane layoutY="123.0" prefHeight="321.0" prefWidth="717.0" style="-fx-background-color: fafafa; -fx-border-color: silver;">
+      <TextField fx:id="singUpName" layoutX="14.0" layoutY="25.0" prefHeight="38.0" prefWidth="337.0" promptText="Имя" style="-fx-background-color: fafafa; -fx-border-color: Silver; -fx-border-radius: 5px;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
         <TextField fx:id="singUpLogin" layoutX="14.0" layoutY="76.0" prefHeight="38.0" prefWidth="337.0" promptText="Логин" style="-fx-background-color: fafafa; -fx-border-color: Silver; -fx-border-radius: 5px;">
             <font>
                 <Font size="17.0" />
@@ -22,11 +32,6 @@
             </font>
         </Button>
       <TextField fx:id="singUpLastName" layoutX="366.0" layoutY="25.0" prefHeight="38.0" prefWidth="337.0" promptText="Фамилия" style="-fx-background-color: fafafa; -fx-border-color: Silver; -fx-border-radius: 5px;">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="14.0" layoutY="25.0" prefHeight="38.0" prefWidth="337.0" promptText="Имя" style="-fx-background-color: fafafa; -fx-border-color: Silver; -fx-border-radius: 5px;">
          <font>
             <Font size="17.0" />
          </font>
@@ -50,9 +55,4 @@
          </font>
       </RadioButton>
     </AnchorPane>
-    <Label layoutX="275.0" layoutY="14.0" text="Hello" textFill="WHITE">
-        <font>
-            <Font name="JetBrains Mono Regular" size="56.0" />
-        </font>
-    </Label>
 </AnchorPane>
